@@ -1,7 +1,8 @@
 <template>
   <div id="header-container">
+    <!--logo and singin/signup Section-->
     <el-row class="header-asset-container" type="flex" justify="space-between">
-      <el-col :span="6"><div class="grid-content bg-purple"></div></el-col>
+      <el-col :span="6"><div></div></el-col>
       <el-col :span="6" class="header-image-container">
         <img src="../assets/logo.png" width="150px">
       </el-col>
@@ -9,6 +10,7 @@
         <el-button round icon="el-icon-circle-check-outline">เข้าสู่ระบบ / สมัครสมาชิก</el-button>
       </el-col>
     </el-row>
+    <!--menu Section-->
     <el-row class="header-menu-container">
       <el-col :span="24">
       <el-menu :default-active="activeIndex" mode="horizontal" class="head-menu" @select="handleSelect">
@@ -35,7 +37,10 @@ export default {
     },
     methods: {
       handleSelect(key, keyPath) {
-        console.log(key, keyPath);
+        console.log(key);
+        if(key == "1"){
+
+        }
       }
     }
   }

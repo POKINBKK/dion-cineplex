@@ -10,15 +10,15 @@
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Movie from './components/Movie.vue';
+import Header from './components/Header';
+import Home from './components/Home';
 
 
 export default {
   name: 'App',
   components: {
     Header,
-    Movie
+    Home
   }
 }
 </script>
