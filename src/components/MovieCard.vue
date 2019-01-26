@@ -13,8 +13,13 @@
 <script>
 export default {
   name: 'MovieCard',
-  props: ['title', 'picpath', 'date']
-}
+  props: ['title', 'picpath', 'date'],
+  data(){
+    return{
+      picsrc: "./assets/now-showing/nowshowing-1.jpg"
+    }
+  }
+  }
 </script>
 
 <style scoped>
