@@ -1,7 +1,7 @@
 <template>
   <div id="moviecard-container">
     <el-card :body-style="{ padding: '0px' }" shadow="hover">
-      <img src="../assets/now-showing/movie-1.jpg" class="image">
+      <img src="../assets/now-showing/nowshowing-1.jpg" class="image">
       <div class="information-container">
         <p class="show-date">วันที่เข้าฉาย: {{ date }}</p>
         <p class="movie-title">{{ title }}</p>

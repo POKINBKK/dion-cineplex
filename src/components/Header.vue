@@ -13,14 +13,14 @@
     <!--menu Section-->
     <el-row class="header-menu-container">
       <el-col :span="24">
-      <el-menu :default-active="activeIndex" mode="horizontal" class="head-menu" @select="handleSelect">
-        <el-menu-item index="1">หน้าแรก</el-menu-item>
+      <el-menu :default-active="activeIndex" mode="horizontal" router="true" class="head-menu" @select="handleSelect">
+        <el-menu-item index="/" router="true">หน้าแรก</el-menu-item>
          <el-submenu index="2">
           <template slot="title">ภาพยนตร์</template>
-          <el-menu-item index="2-1">กำลังฉาย</el-menu-item>
-          <el-menu-item index="2-2">โปรแกรมหน้า</el-menu-item>
+          <el-menu-item index="nowshowing">กำลังฉาย</el-menu-item>
+          <el-menu-item index="comingsoon">โปรแกรมหน้า</el-menu-item>
          </el-submenu>
-        <el-menu-item index="3">โรงภาพยนตร์</el-menu-item>
+        <el-menu-item index="theater">โรงภาพยนตร์</el-menu-item>
       </el-menu>
       </el-col>
     </el-row>
@@ -28,6 +28,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'Header',
   data() {
@@ -38,12 +39,9 @@ export default {
     methods: {
       handleSelect(key, keyPath) {
         console.log(key);
-        if(key == "1"){
-
         }
       }
     }
-  }
 </script>
 <style scoped>
   *{
