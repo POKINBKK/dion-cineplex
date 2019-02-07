@@ -1,0 +1,78 @@
+{
+  "nowShowingList" : [
+    {
+      "movieId" : "1",
+      "movieTitle" : "Alita",
+      "showDate" : "14-02-2019",
+      "genre" : "Adventure",
+      "movieLength" : "125",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/HHzBk3aN7mQu310dK_J_P2VPuYqr7Pz15HghFk3xF7_bbD9Q8stHjvTl3MrBKd11dIR83FQgOi0oYD0PhHIb7Sahx7ojmdnVhsdDpIVO5zKFgi5239tRW-xW_Fx14b92qhPTZhaccp_mIuctykfM9xMRJimjcoTZWYt6-lCy_UqyoBNY7f6AiwLM5D9VKcphXm4hBw-tqGxH_U4xUZffEb0jvr0_qFZAC4l_SXY9kqskGB5ks_R3uaGHiiIYVcpHhhGv_7EE9TrBWxpzsWGoaOrL0zXgiflWPteQnJsz-CuODNCsxK27XMijgllj-PIfwiVffFdmSsApW1bNz5-x_W4FghWsSA16WAX5KQK8UZ40t1tsWc_7psgBZB5nGrJhLV0d4RbodtcIKEG7yytOcSRUBokrcAnXI-osY2uc0D8vUMI1Pi7Q_mWm_QnYLZy4tH_9NAOcikUUXoXK1E_Cx-7xp0YB3vMDgb3ZZhyyoLCXszoEE12EouRzI8E3qTbRbfdV79PZx8Dw3Ec6g6sp0bbHR2OsqLadBSPAiY4SStq3ANJf4OiX_6qXpkS_mHGF2l0w_JTnwaoEkp5lw8A435UfVu-GtEX1Yjw62DrUlGvS_oTTRh3kAFJFq0emUosEs62MW0MB5VmU6n9aEzHmhtUJiKnKEJQ=w260-h385-no"
+    },
+    {
+      "movieId" : "2",
+      "movieTitle" : "How to Train Your Dragon 3",
+      "showDate" : "31-01-2019",
+      "genre" : "Animation",
+      "movieLength" : "105",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/CydzW3EdOkp4Nt0-APmuNqj32JOSR41oPI0do2esqqfXWsK3S-Gp1Dg7-KhAjzHxjfGmbLSxXLNB8RGuNoUE-c9VJDnAEPsfLw_wQOmFtX3d4pww1zExaMjnFL8IGohdHYSZENzVzQG0I-d7P6jRwxcns4G4iToGNEZ05G7ALa3wNaQGrxn9Gzvm5-z3T3HV1W6-DV4XdxecQj2Gg6QwqWLxYu_X5qzF3wdd-Xlg3B-0ZMcrpSLr4LV2R7QSGGzPxOPoKzWRQzxHYAe3M84BVCnSToTzWYAxdXEm_ympCgy2TewsPdcN0_Tc4I7aYU2Ij68kNFgtvJm59EXvzb6bcVFLah-8snY5f7kZKU77xew3IJ67TbLZOghIFk2BGScHUeZNYm1giVW5iebd_6JUWUo3d_zPz05m8pR2OE2qmP-p07W4xMqDfR5X0BbqZ0wdF3cVfSnKUdRLCRhv0HZVOXbiGTbYk3niqIwM2ZcmRb5wHafWKhTYkOxIU-WxSP0U8R3z5igiZA1djwcOvalV7r9KYWJwgKyMLwIgfxq5ragl3CuT9PpfP4_ulTF9zoDBNBBpZJ8DAjVx0rWlNbJmNDAYPFn79ViqIeFdW34xJ2sMJlbWAsC8H5rdM0JZxUA12pbnxtLaDYbjDGUWFYbO4aqze1ugUXQ=w260-h385-no"
+    },
+    {
+      "movieId" : "3",
+      "movieTitle" : "Basis of Sex",
+      "showDate" : "24-01-2019",
+      "genre" : "Biography",
+      "movieLength" : "120",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/SmOkO8zPseLg8el5rGX6Yvi0xwgJ2EDim0bYclSEVd3VTxeapzrrJVdTkfLlZ2LFlV9kWXZ8klcJ8Ohv12yqE4e4tuzMMGonDYaLNYR2pU2GyJWLt7u_fa_rBxk6U1u02yX-uuO97yJofQzIykZ37-c5ojx-OXUNJ9gS833jVzO42KDkoETuEGsEi68laHTwaI4NgOdrm2xY5vfdm5LQL0AwFRsDzyIPwsxllRa3DnKGF_Y6LL9m0-0xERkzXAeWTiz3kWcSPuvsQ2kcQMXoeQg1-ySxBuzC3g2QOF6HoXdGWgfcAuvJ1_JxZZl5wjhIuJcQtW4CTh0ED6poVCGe0I7VOVsc_xCP-EEmtZ7GqOBgolwstQaA1-sI5cN7G0GsM8QoZxPTEcky0zQ7dowdF23uH-Or4K1TB7un4hvIxsePVv8EDn7cJkkA_XF8OEzN3bCLqVHqZ8QLoOFjuB1jaMheXAkAwOhVmH91l74RSSFMs8C0k6NoTz1deKy5rt5_hr2odmCRW0szrM0Y-5kDQaro-iDo2hFjDQXoicbPUpPp3ZVTp4AUg-VtZ8ywbZKt9MYD-0sYoo3LCsJuvBUTaMGtsmas0pPDNEYw7i_f3ajFAznossKSlbKrc-iGZULwXWH7PuDMXXLAFuzxOGlenRK3lek7Ro0=w260-h385-no"
+    },
+    {
+      "movieId" : "4",
+      "movieTitle" : "Glass",
+      "showDate" : "16-01-2019",
+      "genre" : "Action",
+      "movieLength" : "130",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/MKAjeJnVmHrNO1vX_IKywENxKAGK93lcTeIZS_Tl0SHoy9WlpZ4aAT5fzDhXeRkbF27vUdavNk1oc4OEK4SLdwNy4cSB7jQU4cYHVdPNf07c3i8qFc7qXkQRY1-wAFEYtxVqCudA2Zdlt0gGQQhZ-ndqSDXCrWSSenNjKlek3LmAacYIQJuwZ2BYXYOz64Ok1DLiyTxHsEG3IsxXqxJC8d31ZTrLIacCciYPrPNaWupc5qUeKslHJb_M5zAv905QdYLJPvYA2aZJmp9ZSW3ZQi0hwMmf667AUKThS444kPshyYBr2cnsU8v9vi_wYE04kEIY2YhO0WGRNdlElUaABRho9zG0-pejlBFpxTlbG3ImDtxrnSqRnsZNBGW8E0QkuLlWR61Na1XD7zOM3Qaglr5VaPDIl2S9-n13Zpjlt96IvpcFJTCdf1lArakFQMlyulOBOqynFlcnNZuanNM2vD4313B0Gt_gaGVre791rBXxm6qYVEonfz_eNK5fiwzV2rnCrpV_xSUqMLCNcbXSCS5M_IXqA-vy3M3jVnO64ING8a2jp_hTCr5SidYNENQGOSLaxiL9oRipaLzylpOAagf88U4QTX6nzvk_FO_ETclqohUDwzhN-aaLKUH_6POqEk86vLTRdhj14RNsKYPxi8ynE_L0ru8=w260-h385-no"
+    },
+    {
+      "movieId" : "5",
+      "movieTitle" : "Spider-man : Into the Spider-Verse",
+      "showDate" : "10-01-2019",
+      "genre" : "Animation",
+      "movieLength" : "120",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/xteIxbo0vB-bV1A1EhD3B7NxaAQPD3zvBYL7r2YSyRdOdrP9IqswBvrwndf5_yp8kJOTwiJE3S4jVEGDHNfJweMgnFIXNTKT3k2fQwVryt1gmseJ07gYEp7OwRtQ0IZkiZAlOLRLYtDWx5mo6iOV-NZRZUYRhUzR0EwQemjXoKYdw5F1KJrb1hLmOc_0CE4XmKTK_te-mU-TjqraJP5LmQYl7OOpB6c4aWyuFSTdGLrsowha1pJug4oUN2yM6lGfUOq2kYlyXf0sdyyMl8lzWQA4tMpmVccjPhPUdKL4iDH6DrcU40URO54L8CH_d5i4GevN0Pk8vfjb2cOGwv1qDNCDltot7zqgKIszqn0IwiG-m34XGwDUHNuZMTrFNHax5K-UynJl_Nnx7Ifiy7HSU9u1zOXXk1bpzNzjoBfDu4TJ-ogwAEfVdW6uLjOOyqn12Y3bnJ4fvcZClikrlBl-gJ6jz3u0J2icdIwhP2jBcBYvee5O27KaDmfVQE3I9XbNmvMvQ7zSK7VU0jaEojUT7oMBJ0YyaVx2jUDWODkmEO8oWTXAPl1gq0Kemt5QkFRsatm9AihXJKCaxpOelJozAR2APk86YKQUvS8SiJ9i5XcEndbSmHsYfldXwNdni9nYHc3n3O7uDCGNv1QUTpPXor4Su92pXT4=w260-h385-no"
+    },
+    {
+      "movieId" : "6",
+      "movieTitle" : "Aquaman",
+      "showDate" : "13-12-2018",
+      "genre" : "Action",
+      "movieLength" : "145",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/vHEAreGiR-Risw2HSovVt_Fdl5SMPcS5-Qwla8jkJBGTxpvxCpnroKUe2Ksz4692nX--lO1afJKNzgMw5WkCEs61a3-u_uMDlScKy0HqaGmbC6lon_hqZKumR8FqHPdZ0CCwf-rqF_rohhI7jTEuLpr7yBsGtJkbvIsDEHUniV0DpmEWd0mqZbXYyK6ot1ie4ectwZfpcjJtCKj-9VItY7CpyQCee4Aifg-oPHJrJd6g1TyKz4NqB3zEcpB8rEB15JbzHoVJghyO-1wcUljaENz9XOWrgsTG3r-YksgVwCwKNZ796CmD_cv7nmYLFg1KEbohohHrZ9eoiixaGnfgS_K75eKdqciZaKLm-4J96fEX3gDCctqg1ZtEDBp60kNcerc2lxsYpjyyxgnw3MVzvEATGc0Ww6zbAji-d1WqG-Xl31dxHGmVf7DNPt7o10X4TgTzawRqhl4vCTmjkAOKFQQXGJynXu6Q2rUNVQV1CnlCoov5cjVMEiX9myFbya-Dk-BibXqmWG-S3ZJGg_lKNySc-VzKXRdkEiuhG4ssIoVrnGJbVTunFb-ewF7qAC8lFWKC1YsdGsy1beEz4qwBEGHyt-oK1RHR7p0aQIBfEyWibEwsKjoKKunvKzS3cjDZtkSWw9ZpMrWmynvhpQOJJytRKjUkEF8=w260-h385-no"
+    }
+  ],
+  "comingSoonList" : [
+    {
+      "movieId" : "1",
+      "movieTitle" : "Cafe Funiculi Funicula",
+      "showDate" : "21-02-2019",
+      "genre" : "Adventure",
+      "movieLength" : "125",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/b0emvXybr85vNPcMxVGc7tNvQC8eIQT3vXJoy1bv78r6wAMODLvya01Wp-8Z8YlmN6qxoy-YPWS1ywz1nssBaQm950RlHXYhKDBQety9DkUS06dVMQHVi9qQryo0eyAOKfzOo1oUVAZTz8hOBs1zr4qGlqKigFbBZTKHKhwDyaAPOp9KxfVX3SbrcIDVRYGudC2pRfiyUN41lzpKpgNM0geTBWxiUsVyqdsqxM6nFMupTwgaP32_Kx2KzWWEiPwvLXnZS4xrNui8Q6xIm8M5Wo6PvA9LkhZjkfREVEEBenkjUBOraks7sSUxZkrXq2TDyPog34XiCeem2CTPELxjQS9Fn-wxHUb04Lf6Orxk46f7vuq_D8eeFTfJPE-JUj-Sc0WlFVQFuGKKm0E0vgBmsJ601BHA64qiY2QebycrPwx1cXULXJ-SCfm8-MZ3q1qMabkWP6uvq4y8rs6bPDqDA4-3IhmWxHvlECICPB76tycGcsGaAEc4hoeBMbtVhyGAULcz395ga64WRMPwHPnedHLGdoDfHBqy15WgMrHG2U8PS5mSLSry-pce7eeMlX8xTDtEJRTe59L847sAeTAbCN1pxCLGCwkORbaZk09FjTZn2lRqFJ9tNrGeDrZge3lodeKWq5wmsh5DeZGj-alxvd3F6AYHKOc=w260-h385-no"
+    },
+    {
+      "movieId" : "2",
+      "movieTitle" : "The Favourite",
+      "showDate" : "21-02-2019",
+      "genre" : "Biography",
+      "movieLength" : "120",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/1Q6D1Oe3ubiYchibqth6SU3LL1oyUbAIuA6M97orhlzOPL-HB8ImO3ZVct-c4qChqXTwvBP_9O79mwbJj8Xs5uhKibStD8d3AsLGnC2HJkRdDDYtzUMd_Db3sFU3hcn4LHnMjxA15iQ5Lp9wSYh3G63ySwsKqH_fQ3Jts5tHwum9uZU0DVO7BMsFYv2jDuJjcq7VWAFKxyXy-U_Cu_A8yUy2i609ufHzPUtU51vJkVcsyKmUcVL0HwuaTMjnWat8u0HzuuODELArUh-Zo6uZBvdPOKX2RIzTkm5tKWuYpkSyAjP14wrcCRzbhVRjjIQd2N0EPmPMnKEnsDQPSBCK9BG9mYvS_-zDuZvCy5dXACbUpnAHytWDxmocr5tJpHFhmJ9dHHjwQgO2oNFGnDEtYClGVuW-oCoFYrkDlFG8r7VtUy_X-uxzz84IpBAuT9aD3yPR8hPr7W3MuMhndJDpMSj8zUuVwVALbI4LM6Ir7ikaOni5tN-i6B2-kwN92bUY6LPmYQ542ixh9-vkVEhO4WUd1Gp5TsW2bpzdCIdqeYeJtTAmL78OZuFtYInHMGiCdoalwBwygXFEasmcOCcdMhnWSHj43_R1wmrulfxGkDUoJtBSLENuCI_XCRgSvI1kxNNZ5PEfnzd-L-8QB4Cn6yPIg1VYxaQ=w260-h385-no"
+    },
+    {
+      "movieId" : "3",
+      "movieTitle" : "Cadaver",
+      "showDate" : "21-02-2019",
+      "genre" : "Horror",
+      "movieLength" : "90",
+      "movieThumbnails" : "https://lh3.googleusercontent.com/Aor3yfx-1tRNZGFhLyyn5gzj6wvK8GjbpBDKSqwPijh9h6qgK3T2zAMzJcESsltdAAezRwXaeVXyD07yjSLsaD5lDE1WzTV6E6lCp1KIB_o3BxwXCotgRk5TFqhMyHfzlfxu_vIkYT26bY4u6nCa2hr5W69V-DDfdyQerSTZILrt3629wJrNCIclQWYjmNiJkfVGCBrrNwFSoovDSdkJ2iRFzQYBO9pE9WFSkxDHSsP-kjjfYeyg81SUVvsunW-jNm9Z2oxtJV2MbysN5dIjxGohTXl1BzrfqD4JE4Xcwa3R3iLmrMRjvLqfco5-HdI6Lma6Jp4gKJegYu_AL3u8phH7CPf-LfmkQ8zyivlvrOrMuEaoVX70iO5CUrL34FFSYzHpu4RuNikL9ZPq1dsB5aGtI7dloc8JF77_72FempfqPW-nABOc5Zj3fK-edF0ZqtHTAVuSDZjV2Rk-7Zk9QhsPN6PFxzeOJi8tqGlOyfHcmqS2GVhyCfKaAMw5Zshu4ao5jzsKiVY-3bcSE5bWh6T-lnv5fCgkeqHutBm7ASIFwaFw1fQfdsCd1uNqIflpDzT8g6zLamGXjCoMBYtrCqr2e5hVTsraO9-yjkWpOJfSnbEWXMEkejBVqoZs17UawEdqaZwoJMZYT0DgQU1af0mK0Cso7TU=w260-h385-no"
+    }
+  ]
+}

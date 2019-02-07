@@ -19,8 +19,8 @@
     </el-row>
     <el-row>
       <el-collapse-transition>
-        <el-col :span="24" v-if="theator" class="theator-list">
-          <div class="theatorlist-container"><p>all theator</p></div>
+        <el-col :span="24" v-if="theater" class="theater-list">
+          <div class="theaterlist-container"><p>all theator</p></div>
         </el-col>
       </el-collapse-transition>
     </el-row>
@@ -40,20 +40,20 @@ export default {
   name: 'MovieSelector',
   data() {
     return{
-      theator: false,
-      movie: false
+      theater: false,
+      movie: false,
     }
   },
   methods: {
     theatorState: function (event){
       if(event){
-        this.theator = true
+        this.theater = true
         this.movie = false
       }
     },
     movieState: function (event){
       if(event){
-        this.theator = false
+        this.theater = false
         this.movie = true
       }
     },
@@ -82,7 +82,7 @@ export default {
     padding-right: 3em;
   }
 
-  .theator-list {
+  .theater-list {
     position: absolute;
     z-index: 9999;
   }
@@ -91,7 +91,7 @@ export default {
     position: absolute;
     z-index: 9999;
   }
-  .theatorlist-container {
+  .theaterlist-container {
     margin-top: -1em;
     width: 100%;
     height: 500px;

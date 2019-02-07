@@ -1,7 +1,7 @@
 <template>
   <div id="moviecard-container">
     <el-card :body-style="{ padding: '0px' }" shadow="hover">
-      <img src="../assets/now-showing/nowshowing-1.jpg" class="image">
+      <img v-bind:src="picpath" class="image">
       <div class="information-container">
         <p class="show-date">วันที่เข้าฉาย: {{ date }}</p>
         <p class="movie-title">{{ title }}</p>
@@ -13,12 +13,7 @@
 <script>
 export default {
   name: 'MovieCard',
-  props: ['title', 'picpath', 'date'],
-  data(){
-    return{
-      picsrc: "./assets/now-showing/nowshowing-1.jpg"
-    }
-  }
+  props: ['title', 'picpath', 'date']
   }
 </script>
 
@@ -39,7 +34,7 @@ export default {
 }
 
 .movie-title {
-  font-size: 24px;
+  font-size: 16px;
   margin-top: -10px;
 }
 </style>
