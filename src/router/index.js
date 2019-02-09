@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Home from '@/components/Home'
-import Theater from '@/components/Theater'
+import TheaterList from '@/components/TheaterList'
 import ComingSoon from '@/components/ComingSoon'
 import NowShowing from '@/components/NowShowing'
+import Theater from '@/components/Theater'
+
 
 Vue.use(Router)
 
@@ -16,6 +18,11 @@ export default new Router({
     },
     {
       path: '/theater',
+      name: 'TheaterList',
+      component: TheaterList,
+    },
+    {
+      path: '/theater/:id',
       name: 'Theater',
       component: Theater
     },

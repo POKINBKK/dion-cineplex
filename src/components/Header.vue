@@ -17,10 +17,10 @@
         <el-menu-item index="/" router="true">หน้าแรก</el-menu-item>
          <el-submenu index="2">
           <template slot="title">ภาพยนตร์</template>
-          <el-menu-item index="nowshowing">กำลังฉาย</el-menu-item>
-          <el-menu-item index="comingsoon">โปรแกรมหน้า</el-menu-item>
+          <el-menu-item index="/nowshowing">กำลังฉาย</el-menu-item>
+          <el-menu-item index="/comingsoon">โปรแกรมหน้า</el-menu-item>
          </el-submenu>
-        <el-menu-item index="theater">โรงภาพยนตร์</el-menu-item>
+        <el-menu-item index="/theater">โรงภาพยนตร์</el-menu-item>
       </el-menu>
       </el-col>
     </el-row>

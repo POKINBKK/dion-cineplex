@@ -6,9 +6,12 @@
     <el-main id="theater-main-container">
       <el-row>
         <el-col :span="24">
-          <el-card :body-style="{ padding: '0px' }">
-            <img src="../assets/theater_banner1.jpg" style="width: 100%; height: 500px;" class="image">
-          </el-card>
+          <ShowDate v-bind:Cid="cinemaId"></ShowDate>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col>
+          
         </el-col>
       </el-row>
     </el-main>
@@ -17,11 +20,20 @@
 
 <script>
 import Header from './Header';
+import ShowDate from './ShowDate'
+import theaterInfo from '../assets/theater.json';
+import movieInfo from '../assets/movielist.json';
 
 export default {
   name: 'Theater',
   components : {
-    Header
+    Header,
+    ShowDate
+  },
+  data (){
+    return{
+      cinemaId: this.$route.params.id
+    }
   }
 }
 
