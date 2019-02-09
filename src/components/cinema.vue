@@ -1,5 +1,5 @@
 <template>
-<el-main>
+<el-main style="background-color:#f5f7fb;">
     <div class="select-cinema">
         <div class="select-cinema-header">
             <p>กรุงเทพฯ</p>
@@ -165,15 +165,15 @@ export default {
     color: #fff;
     border: none;
     font-weight: 600;
-    background: #2f66cd;
-    background: linear-gradient(90deg,#2f66cd,#4db0db 75%,#5ab6de);
+    background: #2e66cf;
+    background: linear-gradient(90deg,#2e66cf,#4db0db 75%,#5ab6de);
 }
     .button-showtime {
     min-width: 110px;
     height: 40px;
     font-size: 16px;
     color: #1e1f24;
-    border: 2px solid #064cb7;
+    border: 2px solid #2e66cf;
     line-height: 1;
     background: none;
     padding: 0;
