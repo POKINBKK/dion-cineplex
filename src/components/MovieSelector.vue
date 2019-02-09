@@ -42,6 +42,8 @@ export default {
     return{
       theater: false,
       movie: false,
+      tState: false,
+      mState: false,
     }
   },
   methods: {

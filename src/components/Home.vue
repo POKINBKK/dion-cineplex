@@ -1,5 +1,9 @@
 <template>
   <div id="home-container">
+    <el-header>
+     <Header></Header>
+    </el-header>
+    <el-main id="home-main-container">
     <!--Slideshow section-->
     <el-row id="slideshow-row">
       <el-col :span="24">
@@ -29,17 +33,20 @@
         <Movie></Movie>
       </el-col>
     </el-row>
+    </el-main>
   </div>
 </template>
 
 <script>
 import Movie from './Movie';
 import MovieSelector from './MovieSelector';
+import Header from './Header';
 export default {
   name: 'Home',
   components: {
     Movie,
-    MovieSelector
+    MovieSelector,
+    Header
   },
   data (){
     return {
@@ -59,7 +66,7 @@ export default {
     background-color: #99a9bf;
     text-align: center;
   }
-  #home-container{
+  #home-main-container{
     padding-left: 10em;
     padding-right: 10em;
   }

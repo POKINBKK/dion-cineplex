@@ -1,0 +1,19 @@
+{
+  "userList" : [
+    {
+      "userName" : "POKINBKK",
+      "userPassword" : "123456",
+      "userEmail" : "mr.pokiloli@gmail.com",
+      "ticketHistories" : [
+        {
+          "ticketId" : "0001",
+          "movieId" : "1",
+          "cineplexId" : "01",
+          "theaterId" : "01",
+          "seatId" : "A10",
+          "showTimeId" : "0101140027022019"
+        }
+      ]
+    }
+  ]
+}
