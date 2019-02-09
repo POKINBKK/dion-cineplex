@@ -1,5 +1,6 @@
 {
-  "LadkrabangBranch" : {
+  "cineplexList" : [
+    {
     "cineplexId" : "01",
     "cineplexName" : "Dion Cineplex Ladkrabang",
     "cineplexDetail" : [
@@ -8,7 +9,7 @@
         "screeningId" : "1",
         "showTimeList" : [
           {
-            "showDateId" : "010127022019",
+            "showDateId" : "27022019",
             "showDate" : "27-02-2019",
             "showTime" : [
               {
@@ -34,7 +35,7 @@
             ]
           },
           {
-            "showDateId" : "010128022019",
+            "showDateId" : "28022019",
             "showDate" : "28-02-2019",
             "showTime" : [
               {
@@ -50,7 +51,7 @@
             ]
           },
           {
-            "showDateId" : "010129022019",
+            "showDateId" : "29022019",
             "showDate" : "29-02-2019",
             "showTime" : [
               {
@@ -67,7 +68,7 @@
         "screeningId" : "2",
         "showTimeList" : [
           {
-            "showDateId" : "010227022019",
+            "showDateId" : "27022019",
             "showDate" : "27-02-2019",
             "showTime" : [
               {
@@ -93,7 +94,7 @@
             ]
           },
           {
-            "showDateId" : "010228022019",
+            "showDateId" : "28022019",
             "showDate" : "28-02-2019",
             "showTime" : [
               {
@@ -109,7 +110,7 @@
             ]
           },
           {
-            "showDateId" : "010229022019",
+            "showDateId" : "29022019",
             "showDate" : "29-02-2019",
             "showTime" : [
               {
@@ -126,7 +127,7 @@
         "screeningId" : "3",
         "showTimeList" : [
           {
-            "showDateId" : "010327022019",
+            "showDateId" : "27022019",
             "showDate" : "27-02-2019",
             "showTime" : [
               {
@@ -152,7 +153,7 @@
             ]
           },
           {
-            "showDateId" : "010328022019",
+            "showDateId" : "28022019",
             "showDate" : "28-02-2019",
             "showTime" : [
               {
@@ -168,7 +169,7 @@
             ]
           },
           {
-            "showDateId" : "010329022019",
+            "showDateId" : "29022019",
             "showDate" : "29-02-2019",
             "showTime" : [
               {
@@ -182,7 +183,7 @@
       }
     ]
   },
-  "RangsitBranch" : {
+  {
     "cineplexId" : "02",
     "cineplexName" : "Dion Cineplex Rangsit",
     "cineplexDetail" : [
@@ -191,7 +192,7 @@
         "screeningId" : "4",
         "showTimeList" : [
           {
-            "showDateId" : "020127022019",
+            "showDateId" : "27022019",
             "showDate" : "27-02-2019",
             "showTime" : [
               {
@@ -217,7 +218,7 @@
             ]
           },
           {
-            "showDateId" : "020128022019",
+            "showDateId" : "28022019",
             "showDate" : "28-02-2019",
             "showTime" : [
               {
@@ -233,7 +234,7 @@
             ]
           },
           {
-            "showDateId" : "020129022019",
+            "showDateId" : "29022019",
             "showDate" : "29-02-2019",
             "showTime" : [
               {
@@ -250,7 +251,7 @@
         "screeningId" : "5",
         "showTimeList" : [
           {
-            "showDateId" : "020227022019",
+            "showDateId" : "27022019",
             "showDate" : "27-02-2019",
             "showTime" : [
               {
@@ -276,7 +277,7 @@
             ]
           },
           {
-            "showDateId" : "020228022019",
+            "showDateId" : "28022019",
             "showDate" : "28-02-2019",
             "showTime" : [
               {
@@ -292,7 +293,7 @@
             ]
           },
           {
-            "showDateId" : "020229022019",
+            "showDateId" : "29022019",
             "showDate" : "29-02-2019",
             "showTime" : [
               {
@@ -309,7 +310,7 @@
         "screeningId" : "3",
         "showTimeList" : [
           {
-            "showDateId" : "020327022019",
+            "showDateId" : "27022019",
             "showDate" : "27-02-2019",
             "showTime" : [
               {
@@ -335,7 +336,7 @@
             ]
           },
           {
-            "showDateId" : "020328022019",
+            "showDateId" : "28022019",
             "showDate" : "28-02-2019",
             "showTime" : [
               {
@@ -351,7 +352,7 @@
             ]
           },
           {
-            "showDateId" : "020329022019",
+            "showDateId" : "29022019",
             "showDate" : "29-02-2019",
             "showTime" : [
               {
@@ -365,4 +366,5 @@
       }
     ]
   }
+  ]
 }
