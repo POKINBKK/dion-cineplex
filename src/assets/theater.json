@@ -11,53 +11,66 @@
         "showTimeList" : [
           {
             "showDateId" : "27022019",
-            "showDate" : "27-02-2019",
+            "showDate" : "27 กุมภาพันธ์ 2019",
+            "theaterId" : "01",
+            "screeningId" : "1",
             "showTime" : [
               {
                 "showTimeId" : "0101110027022019",
                 "showTime" : "11.00",
+                "screeningId" : "1",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0101140027022019",
                 "showTime" : "14.00",
+                "screeningId" : "1",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0101170027022019",
                 "showTime" : "17.00",
+                "screeningId" : "1",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0101200027022019",
                 "showTime" : "20.00",
+                "screeningId" : "1",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "28022019",
-            "showDate" : "28-02-2019",
+            "showDate" : "28 กุมภาพันธ์ 2019",
+            "theaterId" : "01",
+            "screeningId" : "1",
             "showTime" : [
               {
                 "showTimeId" : "0101110028022019",
                 "showTime" : "11.00",
+                "screeningId" : "1",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0101140028022019",
                 "showTime" : "14.00",
+                "screeningId" : "1",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "29022019",
-            "showDate" : "29-02-2019",
+            "showDate" : "29 กุมภาพันธ์ 2019",
+            "theaterId" : "01",
+            "screeningId" : "1",
             "showTime" : [
               {
                 "showTimeId" : "0101110029022019",
                 "showTime" : "11.00",
+                "screeningId" : "1",
                 "unAvailableSeat" : []
               }
             ]
@@ -70,53 +83,66 @@
         "showTimeList" : [
           {
             "showDateId" : "27022019",
-            "showDate" : "27-02-2019",
+            "showDate" : "27 กุมภาพันธ์ 2019",
+            "theaterId" : "02",
+            "screeningId" : "2",
             "showTime" : [
               {
                 "showTimeId" : "0102113027022019",
                 "showTime" : "11.30",
+                "screeningId" : "2",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0102143027022019",
                 "showTime" : "14.30",
+                "screeningId" : "2",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0102173027022019",
                 "showTime" : "17.30",
+                "screeningId" : "2",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0102203027022019",
                 "showTime" : "20.30",
+                "screeningId" : "2",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "28022019",
-            "showDate" : "28-02-2019",
+            "showDate" : "28 กุมภาพันธ์ 2019",
+            "theaterId" : "02",
+            "screeningId" : "2",
             "showTime" : [
               {
                 "showTimeId" : "0102113028022019",
                 "showTime" : "11.30",
+                "screeningId" : "2",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0102143028022019",
                 "showTime" : "14.30",
+                "screeningId" : "2",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "29022019",
-            "showDate" : "29-02-2019",
+            "showDate" : "29 กุมภาพันธ์ 2019",
+            "theaterId" : "02",
+            "screeningId" : "2",
             "showTime" : [
               {
                 "showTimeId" : "0102113029022019",
                 "showTime" : "11.30",
+                "screeningId" : "2",
                 "unAvailableSeat" : []
               }
             ]
@@ -129,53 +155,66 @@
         "showTimeList" : [
           {
             "showDateId" : "27022019",
-            "showDate" : "27-02-2019",
+            "showDate" : "27 กุมภาพันธ์ 2019",
+            "theaterId" : "03",
+            "screeningId" : "3",
             "showTime" : [
               {
                 "showTimeId" : "0103120027022019",
                 "showTime" : "12.00",
+                "screeningId" : "3",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0103150027022019",
                 "showTime" : "15.00",
+                "screeningId" : "3",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0103180027022019",
                 "showTime" : "18.00",
+                "screeningId" : "3",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0103210027022019",
                 "showTime" : "21.00",
+                "screeningId" : "3",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "28022019",
-            "showDate" : "28-02-2019",
+            "showDate" : "28 กุมภาพันธ์ 2019",
+            "theaterId" : "03",
+            "screeningId" : "3",
             "showTime" : [
               {
                 "showTimeId" : "0102120028022019",
                 "showTime" : "12.00",
+                "screeningId" : "3",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0103150028022019",
                 "showTime" : "15.00",
+                "screeningId" : "3",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "29022019",
-            "showDate" : "29-02-2019",
+            "showDate" : "29 กุมภาพันธ์ 2019",
+            "theaterId" : "03",
+            "screeningId" : "3",
             "showTime" : [
               {
                 "showTimeId" : "0103120029022019",
                 "showTime" : "12.00",
+                "screeningId" : "3",
                 "unAvailableSeat" : []
               }
             ]
@@ -195,53 +234,66 @@
         "showTimeList" : [
           {
             "showDateId" : "27022019",
-            "showDate" : "27-02-2019",
+            "showDate" : "27 กุมภาพันธ์ 2019",
+            "theaterId" : "01",
+            "screeningId" : "4",
             "showTime" : [
               {
                 "showTimeId" : "0201110027022019",
                 "showTime" : "11.00",
+                "screeningId" : "4",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0201140027022019",
                 "showTime" : "14.00",
+                "screeningId" : "4",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0201170027022019",
                 "showTime" : "17.00",
+                "screeningId" : "4",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0201200027022019",
                 "showTime" : "20.00",
+                "screeningId" : "4",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "28022019",
-            "showDate" : "28-02-2019",
+            "showDate" : "28 กุมภาพันธ์ 2019",
+            "theaterId" : "01",
+            "screeningId" : "4",
             "showTime" : [
               {
                 "showTimeId" : "0201110028022019",
                 "showTime" : "11.00",
+                "screeningId" : "4",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0201140028022019",
                 "showTime" : "14.00",
+                "screeningId" : "4",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "29022019",
-            "showDate" : "29-02-2019",
+            "showDate" : "29 กุมภาพันธ์ 2019",
+            "theaterId" : "01",
+            "screeningId" : "4",
             "showTime" : [
               {
                 "showTimeId" : "0201110029022019",
                 "showTime" : "11.00",
+                "screeningId" : "4",
                 "unAvailableSeat" : []
               }
             ]
@@ -254,53 +306,66 @@
         "showTimeList" : [
           {
             "showDateId" : "27022019",
-            "showDate" : "27-02-2019",
+            "showDate" : "27 กุมภาพันธ์ 2019",
+            "theaterId" : "02",
+            "screeningId" : "5",
             "showTime" : [
               {
                 "showTimeId" : "0202113027022019",
                 "showTime" : "11.30",
+                "screeningId" : "5",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0202143027022019",
                 "showTime" : "14.30",
+                "screeningId" : "5",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0202173027022019",
                 "showTime" : "17.30",
+                "screeningId" : "5",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0202203027022019",
                 "showTime" : "20.30",
+                "screeningId" : "5",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "28022019",
-            "showDate" : "28-02-2019",
+            "showDate" : "28 กุมภาพันธ์ 2019",
+            "theaterId" : "02",
+            "screeningId" : "5",
             "showTime" : [
               {
                 "showTimeId" : "0202113028022019",
                 "showTime" : "11.30",
+                "screeningId" : "5",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0202143028022019",
                 "showTime" : "14.30",
+                "screeningId" : "5",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "29022019",
-            "showDate" : "29-02-2019",
+            "showDate" : "29 กุมภาพันธ์ 2019",
+            "theaterId" : "02",
+            "screeningId" : "5",
             "showTime" : [
               {
                 "showTimeId" : "0202113029022019",
                 "showTime" : "11.30",
+                "screeningId" : "5",
                 "unAvailableSeat" : []
               }
             ]
@@ -309,57 +374,70 @@
       },
       {
         "theaterId" : "03",
-        "screeningId" : "3",
+        "screeningId" : "6",
         "showTimeList" : [
           {
             "showDateId" : "27022019",
-            "showDate" : "27-02-2019",
+            "showDate" : "27 กุมภาพันธ์ 2019",
+            "theaterId" : "03",
+            "screeningId" : "6",
             "showTime" : [
               {
                 "showTimeId" : "0203120027022019",
                 "showTime" : "12.00",
+                "screeningId" : "6",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0203150027022019",
                 "showTime" : "15.00",
+                "screeningId" : "6",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0203180027022019",
                 "showTime" : "18.00",
+                "screeningId" : "6",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0203210027022019",
                 "showTime" : "21.00",
+                "screeningId" : "6",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "28022019",
-            "showDate" : "28-02-2019",
+            "showDate" : "28 กุมภาพันธ์ 2019",
+            "theaterId" : "03",
+            "screeningId" : "6",
             "showTime" : [
               {
                 "showTimeId" : "0202120028022019",
                 "showTime" : "12.00",
+                "screeningId" : "6",
                 "unAvailableSeat" : []
               },
               {
                 "showTimeId" : "0203150028022019",
                 "showTime" : "15.00",
+                "screeningId" : "6",
                 "unAvailableSeat" : []
               }
             ]
           },
           {
             "showDateId" : "29022019",
-            "showDate" : "29-02-2019",
+            "showDate" : "29 กุมภาพันธ์ 2019",
+            "theaterId" : "03",
+            "screeningId" : "6",
             "showTime" : [
               {
                 "showTimeId" : "0203120029022019",
                 "showTime" : "12.00",
+                "screeningId" : "6",
                 "unAvailableSeat" : []
               }
             ]
