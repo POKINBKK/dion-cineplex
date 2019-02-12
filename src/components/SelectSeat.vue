@@ -15,7 +15,7 @@
                 <li class="seat-item">
                   <el-radio v-model="radio" label="1" v-on:change="padult">ผู้ใหญ่</el-radio>
                   <div class="seat-icon">
-                    <img src="../assets/now-showing/chair.png" style="width: 25%;">
+                    <img src="../assets/now-showing/chair_adult.png" style="width: 25%;">
                   </div>
                   <!-- <p class="name">ผู้ใหญ่</p> -->
                   <p class="name">450 บาท</p>
@@ -60,10 +60,11 @@
                   v-else-if="!isExist(seat+num)"
                   v-on:click="cancle_seat($event)"
                 >
-                  <img src="../assets/now-showing/right.png" style="width: 50%;">
+                  <img v-if="isExistKid(seat+num)" src="../assets/now-showing/right.png" style="width: 50%;">
+                  <img v-if="isExistAdult(seat+num)" src="../assets/now-showing/right2.png" style="width: 50%;">
                 </button>
                 <button class="button-seat" v-bind:id="seat+num" v-else>
-                  <img src="../assets/now-showing/right2.png" style="width: 50%;">
+                  <img src="../assets/now-showing/wrong.png" style="width: 50%;">
                 </button>
               </el-col>
               <el-col
@@ -89,15 +90,16 @@
               <div class="inner">
                 <div>
                   <h3 class="heading">ที่นั่งที่เลือก</h3>
-                  <p class="total-price" v-if="this.buy_list.length==0">-</p>
-                  <p class="total-price" v-else>{{buy_list}}</p>
+                  <p class="total-price" v-if="this.buy_list_adult.length==0&&this.buy_list_kid.length==0">-</p>
+                  <p class="total-price" v-else>ผู้ใหญ่:{{buy_list_adult}} เด็ก:{{buy_list_kid}}</p>
                 </div>
                 <div>
                   <h3 class="heading">ราคารวม</h3>
                   <p class="total-price">{{price_all}} bath</p>
                 </div>
                 <el-row style="margin:10px;">
-                  <el-button type="primary" round v-on:click="confirm()">ดำเนินการต่อ</el-button>
+                  <el-button type="primary" disabled v-if="this.buy_list_adult.length==0&&this.buy_list_kid.length==0" round>ดำเนินการต่อ</el-button>
+                  <el-button type="primary" v-else round v-on:click="confirm()">ดำเนินการต่อ</el-button>
                 </el-row>
               </div>
             </div>
@@ -120,10 +122,11 @@ export default {
         col: ["1", "2", "3", "4", "5", "6", "7", "8"]
       },
       bought_list: [],
-      buy_list: [],
+      buy_list_adult: [],
+      buy_list_kid: [],
       price_all: 0,
       price: 450,
-      state:''
+      state: ""
     };
   },
   methods: {
@@ -136,42 +139,84 @@ export default {
       return false;
     },
     isExist2: function(e) {
-      for (var i = 0; i < this.buy_list.length; i++) {
-        if (this.buy_list[i] == e) {
+      for (var i = 0; i < this.buy_list_adult.length; i++) {
+        if (this.buy_list_adult[i] == e) {
           return true;
+          // break
+        }
+      }
+      for (var i = 0; i < this.buy_list_kid.length; i++) {
+        if (this.buy_list_kid[i] == e) {
+          return true;
+          // break
+        }
+      }
+      return false;
+    },
+    isExistAdult:function(e){
+      for (var i = 0; i < this.buy_list_adult.length; i++) {
+        if (this.buy_list_adult[i] == e) {
+          return true;
+          // break
+        }
+      }
+      return false;
+    },
+    isExistKid:function(e){
+      for (var i = 0; i < this.buy_list_kid.length; i++) {
+        if (this.buy_list_kid[i] == e) {
+          return true;
+          // break
         }
       }
       return false;
     },
     buy_seat: function(event) {
       let targetId = event.currentTarget.id;
-      this.buy_list.push(targetId);
-      this.price_all += this.price;
+      if (this.price == 450) {
+        this.buy_list_adult.push(targetId);
+      } else if (this.price == 200) {
+        this.buy_list_kid.push(targetId);
+      }
+      this.price_all =
+        this.buy_list_kid.length * 200 + this.buy_list_adult.length * 450;
       console.log(targetId);
       console.log(this.price);
     },
     cancle_seat: function(event) {
       let targetId = event.currentTarget.id;
-      let index = this.buy_list.indexOf(targetId);
-      this.buy_list.splice(index, 1);
-      this.price_all -= this.price;
+      let index = this.buy_list_adult.indexOf(targetId);
+      let index2 = this.buy_list_kid.indexOf(targetId);
+      if (index != -1) {
+        this.buy_list_adult.splice(index, 1);
+      }
+      if (index2 != -1) {
+        this.buy_list_kid.splice(index2, 1);
+      }
+      this.price_all =
+        this.buy_list_kid.length * 200 + this.buy_list_adult.length * 450;
       console.log(targetId);
     },
     confirm: function() {
-      console.log(this.buy_list);
-      console.log(this.buy_list.length);
-      for (var i = 0; i < this.buy_list.length; i++) {
-        this.bought_list.push(this.buy_list[i]);
-        console.log(this.buy_list[i]);
+      console.log(this.buy_list_adult);
+      console.log(this.buy_list_adult.length);
+      for (var i = 0; i < this.buy_list_adult.length; i++) {
+        this.bought_list.push(this.buy_list_adult[i]);
+        console.log(this.buy_list_adult[i]);
       }
-      this.buy_list = [];
+      for (var i = 0; i < this.buy_list_kid.length; i++) {
+        this.bought_list.push(this.buy_list_kid[i]);
+        console.log(this.buy_list_kid[i]);
+      }
+      this.buy_list_adult = [];
+      this.buy_list_kid = [];
       this.price_all = 0;
     },
-    pkid:function(){
-      this.price=200;
+    pkid: function() {
+      this.price = 200;
     },
-    padult:function(){
-      this.price=450;
+    padult: function() {
+      this.price = 450;
     }
   }
 };
