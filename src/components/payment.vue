@@ -69,6 +69,7 @@ export default {
   font-size: 20px;
   padding-top: 10px;
   text-align: center;
+  font-weight: 600;
 }
 .btn-wrap {
   max-width: 350px;
@@ -120,7 +121,7 @@ export default {
 .seat {
   color: #2d64cf;
   font-size: 24px;
-  font-weight: 600;
+  
   line-height: 1;
   margin: 0 0 10px;
 }
