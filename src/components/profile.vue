@@ -21,12 +21,12 @@
             <el-tab-pane label="ประวัติการซื้อ" name="second">
               <div class="heading">ประวัติการซื้อ</div>
               <div class="head">
-                <el-row v-for="set in bought_list" :key="set" style="margin-top:5%">
-                  <el-col :span="12">
-                    <!-- <img :src="set.pic" class="poster"> -->
+                <el-card v-for="set in bought_list" :key="set" class="box">
+                  <el-row>
+                  <el-col :span="6">
                     <img src="../assets/now-showing/movie-1.jpg" class="poster">
                   </el-col>
-                  <el-col :span="12">
+                  <el-col :span="15">
                     <el-row class="info">
                       <el-col class="bought">ชื่อหนัง : {{set.movie}}</el-col>
                       <el-col class="bought">โรงหนัง : {{set.cinema}} โรง: {{set.theater}}</el-col>
@@ -35,10 +35,11 @@
                       <el-col class="bought">เวลาที่สั่งซื้อ : {{set.time}}</el-col>
                     </el-row>
                   </el-col>
-                  <el-col
-                    style="margin-top:5%"
-                  >----------------------------------------------------------------------------------------</el-col>
-                </el-row>
+                  <el-col :span="3" style="float:right">
+                    <el-button type="danger">Refund</el-button>
+                  </el-col>
+                  </el-row>
+                </el-card>
               </div>
             </el-tab-pane>
           </el-tabs>
@@ -126,18 +127,22 @@ export default {
   padding-top: 10px;
   text-align: center;
   font-weight: 200;
-  margin-bottom: 5px;
 }
 .bought {
   margin-bottom: 15px;
 }
 .info {
   text-align: left;
-  margin-top: 5%;
+  /* margin-top: 5%; */
 }
 .poster {
-  width: 25%;
+  width: 80%;
   float: right;
-  margin-right: 5%;
+  margin-right: 15%;
+}
+.box{
+  margin-top: 5%;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 </style>
