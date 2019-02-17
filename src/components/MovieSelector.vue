@@ -1,4 +1,5 @@
  <template>
+ <!--ตัวselectorแบบเมเจอร์-->
   <div id="movieselector-container">
     <el-row>
       <el-col :span="24">

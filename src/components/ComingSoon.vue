@@ -1,4 +1,5 @@
 <template>
+  <!--หน้าComing soon-->
   <div id="comingsoon-container">
     <el-header>
      <Header></Header>
@@ -11,11 +12,11 @@
       </el-col>
     </el-row>
     <!--selector section-->
-    <el-row>
+    <!-- <el-row>
       <el-col :span="24" class="movieselector-container">
         <MovieSelector></MovieSelector>
       </el-col>
-    </el-row>
+    </el-row> -->
     <!--movie section-->
     <el-row class="movie-row" justify="space-around" :gutter="20">
       <el-col :span="6" v-for="item in movieList.comingSoonList" :key="item.movieId" class="movie-col">

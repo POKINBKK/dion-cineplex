@@ -1,4 +1,5 @@
 <template>
+  <!--หน้า home แหละ-->
   <div id="home-container">
     <el-header>
      <Header></Header>
@@ -17,11 +18,11 @@
       </el-col>
     </el-row>
     <!--MovieSelector Section-->
-    <el-row>
+    <!-- <el-row>
       <el-col class="movieselector-container" :span="24">
         <MovieSelector></MovieSelector>
       </el-col>
-    </el-row>
+    </el-row> -->
     <!--all movie for select section-->
     <el-row>
       <el-col id="moviesection-title" :span="24">

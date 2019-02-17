@@ -1,4 +1,5 @@
 <template>
+  <!--จำแนกหนังตามโรงใหญ่เดียวกัน-->
   <div id="showtimemcard-container">
   <el-card>
     <el-row :gutter="12">
@@ -50,7 +51,7 @@ export default {
   },
   methods: {
     roundSelect(id){
-      console.log(id)
+      this.$router.push({name: 'SelectSeat',params :{id: id}})
     }
   }
 }

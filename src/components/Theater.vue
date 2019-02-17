@@ -1,4 +1,5 @@
 <template>
+  <!--หน้า theater ที่จะมีหนังให้เลือก-->
   <div id="theater-container">
     <el-header>
      <Header></Header>

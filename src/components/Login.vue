@@ -1,0 +1,77 @@
+<template>
+  <!--หน้า login-->
+  <div id="login-container">
+    <el-header>
+     <Header></Header>
+    </el-header>
+    <el-main>
+      <el-row type="flex" justify="center">
+        <el-col :span="6" class="cardform-container">
+          <el-card class="card-container">
+            <el-form ref="form" :model="form" label-width="70px">
+              <el-form-item label="Username">
+                <el-input v-model="form.username"></el-input>
+              </el-form-item>
+              <el-form-item label="Password" prop="pass">
+                <el-input type="password" v-model="form.password" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item style="text-align: left;">
+                <el-button type="primary" @click="onSubmit">Login</el-button>
+                <el-button @click="onCancel">Cancel</el-button>
+              </el-form-item>
+            </el-form>
+          </el-card>
+        </el-col>
+      </el-row>
+    </el-main>
+  </div>
+</template>
+
+<script>
+import Header from './Header'
+import userInfo from '../assets/userinfo.json'
+
+export default {
+  name: 'Login',
+  components: {
+    Header
+  },
+  data() {
+    return {
+      form : {
+        username: "",
+        password: ""
+      },
+      allUser: userInfo.userList
+    }
+  },
+  methods: {
+    onSubmit(){
+      for(let item in this.allUser){
+        if(this.form.username == this.allUser[item].userName && this.form.password == this.allUser[item].userPassword){
+          console.log('pass');
+          break;
+        }
+        else{
+          console.log('no');
+        }
+      }
+    },
+    onCancel(){
+      this.$router.push({path: '/'});
+    }
+  }
+}
+</script>
+
+<style scoped>
+
+.cardform-container {
+  text-align: center;
+}
+
+.card-container {
+  width: 25em;
+}
+
+</style>

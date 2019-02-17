@@ -1,4 +1,5 @@
 <template>
+  <!--หน้าเลือกโรงที่มี 2 โรง-->
   <div id="theaterlist-container">
     <el-header>
      <Header></Header>

@@ -1,4 +1,5 @@
 <template>
+  <!--ตัววนสร้างลิสหนังตามวัน แบบรับวันกับเลขโรงหนังเข้ามา-->
   <div id="showmoviebydate-container">
     <el-row>
       <el-col>

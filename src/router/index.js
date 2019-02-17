@@ -5,6 +5,9 @@ import TheaterList from '@/components/TheaterList'
 import ComingSoon from '@/components/ComingSoon'
 import NowShowing from '@/components/NowShowing'
 import Theater from '@/components/Theater'
+import Login from '@/components/Login'
+import MovieDetail from '@/components/MovieDetail'
+import SelectSeat from '@/components/SelectSeat'
 
 
 Vue.use(Router)
@@ -35,6 +38,26 @@ export default new Router({
       path: '/nowshowing',
       name: 'NowShowing',
       component: NowShowing
+    },
+    {
+      path: '/login',
+      name: 'Login',
+      component: Login
+    },
+    {
+      path: '/nowshowing/:id',
+      name: 'NowShowingDetail',
+      component: MovieDetail
+    },
+    {
+      path: '/comingsoon/:id',
+      name: 'ComingSoonDetail',
+      component: MovieDetail
+    },
+    {
+      path: '/selectseat/:id',
+      name: 'SelectSeat',
+      component: SelectSeat
     }
   ]
 })

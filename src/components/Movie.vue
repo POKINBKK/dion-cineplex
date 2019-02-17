@@ -1,11 +1,12 @@
 <template>
+  <!--ตัววนfor แสดงหนังทั้งหมดในหน้า home-->
   <div id="movie-container">
     <el-row class="movie-row" justify="space-around" :gutter="20">
-      <el-col :span="6" v-for="item in movieList.nowShowingList" :key="item.movieId" class="movie-col">
-        <MovieCard v-bind:title="item.movieTitle" v-bind:date="item.showDate" v-bind:picpath="item.movieThumbnails"></MovieCard>
+      <el-col :span="6" v-for="item1 in movieList.nowShowingList" :key="item1.movieId" class="movie-col">
+        <MovieCard v-bind:title="item1.movieTitle" v-bind:date="item1.showDate" v-bind:picpath="item1.movieThumbnails"></MovieCard>
       </el-col>
-            <el-col :span="6" v-for="item in movieList.comingSoonList" :key="item.movieId" class="movie-col">
-        <MovieCard v-bind:title="item.movieTitle" v-bind:date="item.showDate" v-bind:picpath="item.movieThumbnails"></MovieCard>
+            <el-col :span="6" v-for="item2 in movieList.comingSoonList" :key="item2.movieId" class="movie-col">
+        <MovieCard v-bind:title="item2.movieTitle" v-bind:date="item2.showDate" v-bind:picpath="item2.movieThumbnails"></MovieCard>
       </el-col>
     </el-row>
   </div>
