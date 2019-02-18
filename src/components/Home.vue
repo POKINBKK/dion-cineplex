@@ -27,6 +27,7 @@
     <el-row>
       <el-col id="moviesection-title" :span="24">
         <h1>ภาพยนตร์</h1>
+        <p>มีfilter แถวๆนี้แหละ</p>
       </el-col>
     </el-row>
     <el-row id="movie-row">
