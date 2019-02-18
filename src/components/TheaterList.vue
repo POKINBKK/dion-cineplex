@@ -18,8 +18,8 @@
 </template>
 
 <script>
-import Header from './Header';
-import json from '../assets/theater.json';
+import Header from './Header'
+import json from '../assets/theater.json'
 
 export default {
   name: 'TheaterList',

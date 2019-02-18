@@ -28,10 +28,10 @@
 </template>
 
 <script>
-import MovieCard from './MovieCard';
-import json from '../assets/movielist.json';
-import MovieSelector from './MovieSelector';
-import Header from './Header';
+import MovieCard from './MovieCard'
+import json from '../assets/movielist.json'
+import MovieSelector from './MovieSelector'
+import Header from './Header'
 
 export default {
   name: 'comingSoon',

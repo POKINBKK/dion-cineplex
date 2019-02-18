@@ -25,10 +25,10 @@
 </template>
 
 <script>
-import Header from './Header';
-import ShowMoviebyDate from './ShowMoviebyDate';
-import theaterInfo from '../assets/theater.json';
-import movieInfo from '../assets/movielist.json';
+import Header from './Header'
+import ShowMoviebyDate from './ShowMoviebyDate'
+import theaterInfo from '../assets/theater.json'
+import movieInfo from '../assets/movielist.json'
 
 export default {
   name: 'Theater',

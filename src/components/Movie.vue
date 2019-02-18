@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import MovieCard from './MovieCard';
+import MovieCard from './MovieCard'
 import json from '../assets/movielist.json'
 
 export default {

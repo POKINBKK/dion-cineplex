@@ -37,8 +37,8 @@
 </template>
 
 <script>
-import theaterInfo from '../assets/theater.json';
-import movieInfo from '../assets/movielist.json';
+import theaterInfo from '../assets/theater.json'
+import movieInfo from '../assets/movielist.json'
 
 export default {
   name: 'ShowTimeMCard',

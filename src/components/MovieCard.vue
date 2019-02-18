@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import json from '../assets/movielist.json';
+import json from '../assets/movielist.json'
 
 export default {
   name: 'MovieCard',

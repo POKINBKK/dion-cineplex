@@ -39,9 +39,9 @@
 </template>
 
 <script>
-import Movie from './Movie';
-import MovieSelector from './MovieSelector';
-import Header from './Header';
+import Movie from './Movie'
+import MovieSelector from './MovieSelector'
+import Header from './Header'
 export default {
   name: 'Home',
   components: {

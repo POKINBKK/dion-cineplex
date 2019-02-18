@@ -8,6 +8,7 @@ import Theater from '@/components/Theater'
 import Login from '@/components/Login'
 import MovieDetail from '@/components/MovieDetail'
 import SelectSeat from '@/components/SelectSeat'
+import Register from '@/components/Register'
 
 
 Vue.use(Router)
@@ -58,6 +59,11 @@ export default new Router({
       path: '/selectseat/:id',
       name: 'SelectSeat',
       component: SelectSeat
+    },
+    {
+      path: '/register',
+      name: 'Register',
+      component: Register
     }
   ]
 })

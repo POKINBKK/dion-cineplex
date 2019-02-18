@@ -48,10 +48,10 @@
 </template>
 
 <script>
-import Header from './Header';
-import ShowTimeTCard from './ShowTimeTCard';
-import moviejson from '../assets/movielist.json';
-import theaterjson from '../assets/theater.json';
+import Header from './Header'
+import ShowTimeTCard from './ShowTimeTCard'
+import moviejson from '../assets/movielist.json'
+import theaterjson from '../assets/theater.json'
 
 export default {
   name: 'MovieDetail',

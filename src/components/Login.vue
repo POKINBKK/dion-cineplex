@@ -9,18 +9,25 @@
         <el-col :span="6" class="cardform-container">
           <el-card class="card-container">
             <el-form ref="form" :model="form" label-width="70px">
-              <el-form-item label="Username">
+              <el-form-item label="ชื่อผู้ใช้">
                 <el-input v-model="form.username"></el-input>
               </el-form-item>
-              <el-form-item label="Password" prop="pass">
+              <el-form-item label="รหัสผ่าน" prop="pass">
                 <el-input type="password" v-model="form.password" autocomplete="off"></el-input>
               </el-form-item>
               <el-form-item style="text-align: left;">
-                <el-button type="primary" @click="onSubmit">Login</el-button>
-                <el-button @click="onCancel">Cancel</el-button>
+                <el-button type="primary" @click="onSubmit">เข้าสู่ระบบ</el-button>
+                <el-button @click="onCancel">ยกเลิก</el-button>
               </el-form-item>
             </el-form>
           </el-card>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="24">
+          <div style="text-align: center;padding-top: 1em;padding-left:2em;">
+                <p><span>คุณยังไม่ได้สมัครสมาชิก? &nbsp&nbsp</span><el-button type="primary" @click="registerClick" round>สมัครสมาชิก</el-button></p>
+          </div>
         </el-col>
       </el-row>
     </el-main>
@@ -59,6 +66,9 @@ export default {
     },
     onCancel(){
       this.$router.push({path: '/'});
+    },
+    registerClick(){
+      this.$router.push({path: '/register'});
     }
   }
 }
