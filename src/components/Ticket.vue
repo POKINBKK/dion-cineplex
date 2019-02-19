@@ -19,11 +19,13 @@
                   <li>ผู้สูงอายุ : {{old_string}}</li>
                 </ul>
               </el-col>
-              <el-col v-if="this.$router.name=='Profile'" class="bought">เวลาที่สั่งซื้อ : เทพ</el-col>
+              <el-col v-if="this.$route.name=='Profile'" class="bought">เวลาที่สั่งซื้อ : {{timestamp}}</el-col>
             </el-row>
           </el-col>
           <el-col :span="3" style="float:right">
-            <el-button v-if="this.$router.name=='Profile'" type="danger">Refund</el-button>
+            <div style="padding-top: 7em;">
+            <el-button v-if="this.$route.name=='Profile'" type="danger" @click="removeItem">Refund</el-button>
+            </div>
           </el-col>
       </el-row>
     </el-card>
@@ -182,6 +184,29 @@ export default {
       } else {
         return result;
       }
+    }
+  },
+  methods: {
+    removeItem(){
+      let userinfo = JSON.parse(window.localStorage.getItem('user'));
+      let tickets = userinfo.ticket;
+      console.log(tickets);
+      for(let i = 0;i<tickets.length;i++){
+        console.log("-------")
+        console.log(tickets[i].showTimeId === this.showTimeId);
+        console.log(tickets[i].adult_seat.toString() == this.adult_seat.toString());
+        console.log(tickets[i].kid_seat.toString() == this.kid_seat.toString());
+        console.log(tickets[i].old_seat.toString() == this.old_seat.toString());
+        console.log(tickets[i].timestamp === this.timestamp);
+        if(tickets[i].showTimeId === this.showTimeId && tickets[i].adult_seat.toString() === this.adult_seat.toString() && tickets[i].kid_seat.toString() === this.kid_seat.toString() && tickets[i].old_seat.toString() === this.old_seat.toString() && tickets[i].timestamp === this.timestamp){
+          console.log(i);
+          tickets.splice(i, 1);
+          break;
+        }
+      }
+      userinfo.ticket = tickets;
+
+      window.localStorage.setItem('user',JSON.stringify(userinfo));
     }
   }
 }

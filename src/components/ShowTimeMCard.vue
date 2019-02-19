@@ -51,7 +51,15 @@ export default {
   },
   methods: {
     roundSelect(id){
-      this.$router.push({name: 'SelectSeat',params :{id: id}})
+      if(JSON.parse(window.localStorage.loginstate)  == true){
+        this.$router.push({name: 'SelectSeat',params :{id: id}})
+      } else {
+          this.$notify({
+          title: 'กรุณาเข้าสู่ระบบ',
+          message: 'ท่านจำเป็นต้องเข้าสู่ระบบจึงจะเลือกที่นั่งได้',
+          type: 'warning'
+        });
+      }
     }
   }
 }

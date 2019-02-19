@@ -23,26 +23,15 @@
             </el-tab-pane>
             <el-tab-pane label="ประวัติการซื้อ" name="second">
               <div class="heading">ประวัติการซื้อ</div>
-              <div class="head">
-                <el-card v-for="set in bought_list" :key="set" class="box">
-                  <el-row>
-                  <el-col :span="6">
-                    <img src="../assets/now-showing/nowshowing-1.jpg" class="poster">
-                  </el-col>
-                  <el-col :span="15">
-                    <el-row class="info">
-                      <el-col class="bought">ชื่อหนัง : {{set.movie}}</el-col>
-                      <el-col class="bought">โรงหนัง : {{set.cinema}} โรง: {{set.theater}}</el-col>
-                      <el-col class="bought">วัน : {{set.show_day}} เวลา : {{set.show_time}}</el-col>
-                      <el-col class="bought">ที่นั่ง : {{set.seat}}</el-col>
-                      <el-col class="bought">เวลาที่สั่งซื้อ : {{set.time}}</el-col>
-                    </el-row>
-                  </el-col>
-                  <el-col :span="3" style="float:right">
-                    <el-button type="danger">Refund</el-button>
-                  </el-col>
-                  </el-row>
-                </el-card>
+              <div v-for="item in ticket" :key="item.showTimeId" class="head">
+                <Ticket 
+                v-bind:showTimeId="item.showTimeId"
+                v-bind:adult_seat="item.adult_seat"
+                v-bind:kid_seat="item.kid_seat"
+                v-bind:old_seat="item.old_seat"
+                v-bind:timestamp="item.timestamp"
+                >
+                </Ticket>
               </div>
             </el-tab-pane>
           </el-tabs>
@@ -54,54 +43,36 @@
 
 <script>
 import Header from './Header'
+import Ticket from './Ticket'
 
 export default {
   name: 'Profile',
   components: {
-    Header
+    Header,
+    Ticket
   },
   data() {
     return {
-      activeName: "first",
-      fname: "123",
-      lname: "321",
-      user: "456",
-      mail: "654",
-      bought_list: [
-        {
-          pic: "../assets/now-showing/movie-1.jpg",
-          seat: ["j3", "j4"],
-          time: "10/02/62",
-          movie: "Alita",
-          cinema: "ลาดกระบัง",
-          theater: 1,
-          show_day: "11/02/62",
-          show_time: "15.30"
-        },
-        {
-          pic: "../assets/now-showing/movie-1.jpg",
-          seat: ["i5", "i4", "i6", "i7"],
-          time: "14/02/62 09.11",
-          movie: "Friend Zone",
-          cinema: "ลาดกระบัง",
-          theater: 1,
-          show_day: "15/02/62",
-          show_time: "15.30"
-        },
-        {
-          pic: "../assets/now-showing/movie-1.jpg",
-          seat: ["c1", "c2", "c3"],
-          time: "16/02/62 00.21",
-          movie: "Marvel",
-          cinema: "ลาดกระบัง",
-          theater: 1,
-          show_day: "17/02/62",
-          show_time: "15.30"
-        }
-      ],
-      bought_time: ["10/02/62 15.23", "14/02/62 09.11", "16/02/62 00.21"],
-      movie: []
+      userinfo: JSON.parse(window.localStorage.getItem('user')),
+      activeName: "first"
     };
+  },
+  computed: {
+    fname(){
+      return this.userinfo.firstname;
+    },
+    lname(){
+      return this.userinfo.lastname;
+    },
+    user(){
+      return this.userinfo.username;
+    },
+    mail(){
+      return this.userinfo.email;
+    },
+    ticket(){
+      return this.userinfo.ticket;
+    }
   },
   methods: {
     handleClick(tab, event) {

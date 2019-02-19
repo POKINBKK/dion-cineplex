@@ -159,7 +159,6 @@ export default {
           };
           unavailable.push(first_unavailable);
         }
-        console.log(unavailable);
 
         window.localStorage.setItem('unavailable', JSON.stringify(unavailable));
 
