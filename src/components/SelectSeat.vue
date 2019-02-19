@@ -119,7 +119,7 @@
                 <div>
                   <h3 class="heading">ที่นั่งที่เลือก</h3>
                   <p class="total-price" v-if="this.buy_list_adult.length==0&&this.buy_list_kid.length==0&&this.buy_list_old.length==0">-</p>
-                  <p class="total-price" v-else>ผู้ใหญ่:{{showBuyAdult}}<br>เด็ก:{{showBuyKid}}<br>คนชรา:{{showBuyOld}}</p>
+                  <p class="total-price" v-else>ผู้ใหญ่:{{showBuyAdult}}<br>เด็ก:{{showBuyKid}}<br>ผู้สูงอายุ:{{showBuyOld}}</p>
                 </div>
                 <div>
                   <h3 class="heading">ราคารวม</h3>
@@ -452,8 +452,8 @@ export default {
 }
 .total-price {
   color: #2d64cf;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 200;
   line-height: 1;
   margin: 0 0 10px;
 }

@@ -74,9 +74,12 @@ export default {
                     lastname: this.userForm.lname,
                     email: this.userForm.email,
                     username: this.userForm.username,
-                    password: this.userForm.password1
+                    password: this.userForm.password1,
+                    ticket: []
                     };
+      let unavailable = []
       window.localStorage.setItem('user', JSON.stringify(detail));
+      window.localStorage.setItem('unavailable', JSON.stringify(unavailable));
       this.$router.push({path: '/'});
     }
   }

@@ -10,6 +10,7 @@ import MovieDetail from '@/components/MovieDetail'
 import SelectSeat from '@/components/SelectSeat'
 import Register from '@/components/Register'
 import Profile from '@/components/Profile'
+import Payment from '@/components/Payment'
 
 
 Vue.use(Router)
@@ -70,6 +71,11 @@ export default new Router({
       path: '/profile',
       name: 'Profile',
       component: Profile
+    },
+    {
+      path: '/payment',
+      name: 'Payment',
+      component: Payment
     }
   ]
 })
