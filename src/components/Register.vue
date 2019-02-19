@@ -13,7 +13,7 @@
               class="form1"
               ref="form"
               label-position="top"
-              :model="sizeForm"
+              :model="userForm"
               label-width="120px"
               size="mini"
               inline="true"
@@ -27,17 +27,17 @@
               <el-form-item label="E-mail" style="width:97%;">
                 <el-input v-model="userForm.email"></el-input>
               </el-form-item>
-              <el-form-item label="Username" style="width:97%;">
+              <el-form-item label="ชื่อผู้ใช้" style="width:97%;">
                 <el-input v-model="userForm.username"></el-input>
               </el-form-item>
-              <el-form-item label="Password" style="width:47%;">
-                <el-input v-model="userForm.password1"></el-input>
+              <el-form-item label="รหัสผ่าน" style="width:47%;">
+                <el-input v-model="userForm.password1" type="password"></el-input>
               </el-form-item>
-              <el-form-item label="Re-Password" style="width:47%;">
-                <el-input v-model="userForm.password2"></el-input>
+              <el-form-item label="ยืนยันรหัสผ่าน" style="width:47%;">
+                <el-input v-model="userForm.password2" type="password"></el-input>
               </el-form-item><br><br>
               <el-form-item size="large" style="width:97%;margin:0;">
-                <el-button  type="primary" @click="onSubmit" style="width:100%;">Create</el-button>
+                <el-button  type="primary" @click="onSubmit" style="width:100%;">สร้างบัญชีผู้ใช้</el-button>
               </el-form-item>
             </el-form>
           </div>
@@ -69,7 +69,15 @@ export default {
   },
   methods: {
     onSubmit() {
-      console.log("submit!");
+      let detail = {
+                    firstname: this.userForm.fname,
+                    lastname: this.userForm.lname,
+                    email: this.userForm.email,
+                    username: this.userForm.username,
+                    password: this.userForm.password1
+                    };
+      window.localStorage.setItem('user', JSON.stringify(detail));
+      this.$router.push({path: '/'});
     }
   }
 };

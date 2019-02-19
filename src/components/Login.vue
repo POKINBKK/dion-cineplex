@@ -36,7 +36,6 @@
 
 <script>
 import Header from './Header'
-import userInfo from '../assets/userinfo.json'
 
 export default {
   name: 'Login',
@@ -49,19 +48,18 @@ export default {
         username: "",
         password: ""
       },
-      allUser: userInfo.userList
+      userData: JSON.parse(window.localStorage.getItem('user'))
     }
   },
   methods: {
     onSubmit(){
-      for(let item in this.allUser){
-        if(this.form.username == this.allUser[item].userName && this.form.password == this.allUser[item].userPassword){
-          console.log('pass');
-          break;
-        }
-        else{
-          console.log('no');
-        }
+      if(this.form.username == this.userData.username && this.form.password == this.userData.password){
+        console.log('pass');
+        window.localStorage.setItem('loginstate', true);
+        this.$router.push({path: '/'});
+      }
+      else{
+        console.log('no');
       }
     },
     onCancel(){

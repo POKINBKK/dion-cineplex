@@ -8,7 +8,8 @@
         <img src="../assets/logo.png" width="150px">
       </el-col>
       <el-col :span="6" class="signin-signup-container">
-        <el-button @click="loginClick" round icon="el-icon-circle-check-outline">เข้าสู่ระบบ / สมัครสมาชิก</el-button>
+        <el-button v-if="!this.loginState" @click="loginClick" round icon="el-icon-circle-check-outline">เข้าสู่ระบบ / สมัครสมาชิก</el-button>
+        <el-button v-if="this.loginState" @click="profileClick" round icon="el-icon-document">ข้อมูลส่วนตัว</el-button>
       </el-col>
     </el-row>
     <!--menu Section-->
@@ -35,12 +36,16 @@ export default {
   data() {
       return {
         activeIndex: '1',
-        dialogFormVisible : false
+        dialogFormVisible : false,
+        loginState: JSON.parse(window.localStorage.getItem('loginstate'))
       };
     },
     methods: {
       loginClick () {
       this.$router.push({path: '/login'});
+    },
+    profileClick () {
+      this.$router.push({path: '/profile'});
     }
   }
 }
