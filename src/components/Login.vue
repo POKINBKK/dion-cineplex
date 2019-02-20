@@ -59,6 +59,11 @@ export default {
         this.$router.push({path: '/'});
       }
       else{
+        this.$notify.error({
+          title: 'การเข้าสู่ระบบผิดพลาด',
+          message: 'ชื่อผู้ใช้ หรือ รหัสผ่านไม่ถูกต้อง',
+          position: 'top-left'
+        });
         console.log('no');
       }
     },

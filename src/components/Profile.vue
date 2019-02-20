@@ -3,16 +3,15 @@
     <el-header>
      <Header></Header>
     </el-header>
-    <el-main>
+    <el-main id="profile-main-container">
       <el-row>
         <el-col>
           <el-tabs tab-position="left" v-model="activeName" @tab-click="handleClick">
             <el-tab-pane label="Profile" name="first">
               <div class="heading">Profile</div>
-              <div class="head">
+              <div class="user-info">
                 <el-row>
-                  <el-col class="bought">ชื่อ : {{fname}}</el-col>
-                  <el-col class="bought">นามสกุล : {{lname}}</el-col>
+                  <el-col class="bought">ชื่อ : {{fname}} {{lname}}</el-col>
                   <el-col class="bought">Username : {{user}}</el-col>
                   <el-col class="bought">E-mail : {{mail}}</el-col>
                 </el-row>
@@ -124,6 +123,15 @@ export default {
 </script>
 
 <style scoped>
+.user-info{
+  text-align: center;
+  font-size: 24px;
+}
+
+#profile-main-container{
+  padding-left: 10em;
+  padding-right: 10em;
+}
 .box-wrap {
   margin-left: 30%;
   margin-right: 30%;
@@ -138,7 +146,7 @@ export default {
 }
 .heading {
   color: #2d64cf;
-  font-size: 20px;
+  font-size: 28px;
   padding-top: 10px;
   text-align: center;
   font-weight: 600;

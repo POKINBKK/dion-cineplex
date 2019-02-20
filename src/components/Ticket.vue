@@ -19,7 +19,7 @@
                   <li>ผู้สูงอายุ : {{old_string}}</li>
                 </ul>
               </el-col>
-              <el-col v-if="this.$route.name=='Profile'" class="bought">เวลาที่สั่งซื้อ : {{timestamp}}</el-col>
+              <!-- <el-col v-if="this.$route.name=='Profile'" class="bought">เวลาที่สั่งซื้อ : {{timestamp}}</el-col> -->
             </el-row>
           </el-col>
           <el-col :span="3" style="float:right">

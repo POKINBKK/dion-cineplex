@@ -13,42 +13,36 @@
         </el-select>
       </el-col>
       <el-col :span="12">
-        <el-autocomplete
-          style="float:right"
-          v-model="state4"
-          :fetch-suggestions="querySearchAsync"
-          placeholder="Search"
-          @select="handleSelect"
-        ></el-autocomplete>
+          <el-input style="float:right; width:40%" placeholder="Search" v-model="input"></el-input>
       </el-col>
     </el-row>
     <el-row class="movie-row" justify="space-around" :gutter="20">
-      <el-col :span="6" v-for="item1 in movieList.nowShowingList" :key="item1.movieId">
+      <el-col :span="6" v-for="item1 in movieSearchResult1" :key="item1.movieId">
         <MovieCard
-          v-if="(value==''||value=='all')&&state4==''"
+          v-if="value==''||value=='all'"
           v-bind:title="item1.movieTitle"
           v-bind:date="item1.showDate"
           v-bind:picpath="item1.movieThumbnails"
           class="movie-col"
         ></MovieCard>
         <MovieCard
-          v-else-if="value==item1.genre||state4==item1.movieTitle"
+          v-else-if="value==item1.genre"
           v-bind:title="item1.movieTitle"
           v-bind:date="item1.showDate"
           v-bind:picpath="item1.movieThumbnails"
           class="movie-col"
         ></MovieCard>
       </el-col>
-      <el-col :span="6" v-for="item2 in movieList.comingSoonList" :key="item2.movieId">
+      <el-col :span="6" v-for="item2 in movieSearchResult2" :key="item2.movieId">
         <MovieCard
-          v-if="(value==''||value=='all')&&state4==''"
+          v-if="value==''||value=='all'"
           v-bind:title="item2.movieTitle"
           v-bind:date="item2.showDate"
           v-bind:picpath="item2.movieThumbnails"
           class="movie-col"
         ></MovieCard>
         <MovieCard
-          v-else-if="value==item2.genre||state4==item2.movieTitle"
+          v-else-if="value==item2.genre"
           v-bind:title="item2.movieTitle"
           v-bind:date="item2.showDate"
           v-bind:picpath="item2.movieThumbnails"
@@ -70,6 +64,7 @@ export default {
   },
   data() {
     return {
+      input: '',
       movieList: json,
       options: [
         {
@@ -138,7 +133,23 @@ export default {
   },
   mounted() {
     this.links = this.loadAll();
-  }
+  },
+  computed:{
+          movieSearchResult1(){
+            return this.movieList.nowShowingList.filter(movie => {
+              let searchtext = this.input.toLowerCase()
+              let isintitle = movie.movieTitle.toLowerCase().includes(searchtext)
+              return isintitle
+            })
+          },
+          movieSearchResult2(){
+            return this.movieList.comingSoonList.filter(movie => {
+              let searchtext = this.input.toLowerCase()
+              let isintitle = movie.movieTitle.toLowerCase().includes(searchtext)
+              return isintitle
+            })
+          }
+        },
 };
 </script>
 

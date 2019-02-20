@@ -57,32 +57,32 @@
                 <h2 style="text-align: center;">กรุณากรอกข้อมูลสมาชิก</h2>
                 <div class="form-container">
                 <el-input class="input-form" placeholder="หมายเลขสมาชิก" v-model="member_section.member_id"></el-input>
-                <el-input class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
+                <el-input type="password" class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
                 <div style="text-align: center;padding-top: 1.5em;">
-                  <el-button type="primary" @click="confirmPayment">ยืนยันการสั่งซื้อ</el-button>
+                  <el-button type="primary" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
                 </div>
                 </div>
               </div>
               <div v-if="kbank">
                 <div class="form-container">
-                  <el-input class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
+                  <el-input type="password" class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
                   </div>
                 <div style="text-align: center;padding-top: 1.5em;">
-                  <el-button type="primary" @click="confirmPayment">ยืนยันการสั่งซื้อ</el-button>
+                  <el-button type="primary" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
                 </div>
                 </div>
               <div v-if="credit">
                 <h2 style="text-align: center;">กรุณากรอกข้อมูลบัตร</h2>
                 <div class="form-container">
-                <el-input class="input-form" placeholder="ชื่อผู้ถือบัตร" v-model="credit.name"></el-input>
-                <el-input class="input-form" placeholder="หมายเลขบัตร" v-model="credit.card_id"></el-input>
+                <el-input class="input-form" placeholder="ชื่อผู้ถือบัตร" v-model="credit_section.name"></el-input>
+                <el-input class="input-form" placeholder="หมายเลขบัตร" v-model="credit_section.card_id"></el-input>
                 <div class="ddyy-cvv-container">
-                  <el-input class="input-form-min" placeholder="ดด/ปป" v-model="credit.ddyy"></el-input>
-                  <el-input class="input-form-min" placeholder="CVV" v-model="credit.cvv"></el-input>
+                  <el-input class="input-form-min" placeholder="ดด/ปป" v-model="credit_section.ddyy"></el-input>
+                  <el-input class="input-form-min" placeholder="CVV" v-model="credit_section.cvv"></el-input>
                 </div>
-                <el-input class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
+                <el-input type="password" class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
                 <div style="text-align: center;padding-top: 1.5em;">
-                  <el-button type="primary" @click="confirmPayment">ยืนยันการสั่งซื้อ</el-button>
+                  <el-button type="primary" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
                 </div>
                 </div>
               </div>
@@ -126,7 +126,42 @@ export default {
     };
   },
   methods: {
+    confirmForm(){
+      if(this.member){
+        if(this.member_section.member_id==''){
+          this.$notify.error({
+          title: 'การยืนยันการชำระเงินผิดพลาด',
+          message: 'กรุณาระบุข้อมูลให้ครบถ้วน',
+          position: 'top-left'
+        });
+        } else {
+          this.confirmPayment()
+        }
+      }
+      else if(this.credit){
+        if(this.credit_section.name=='' || this.credit_section.card_id=='' || this.credit_section.ddyy=='' || this.credit_section.cvv==''){
+          this.$notify.error({
+          title: 'การยืนยันการชำระเงินผิดพลาด',
+          message: 'กรุณาระบุข้อมูลให้ครบถ้วน',
+          position: 'top-left'
+        });
+        } else {
+          this.confirmPayment()
+        }
+      }
+      else {
+        this.confirmPayment()
+      }
+    },
     confirmPayment() {
+        if(this.password != this.userinfo.password){
+          this.$notify.error({
+          title: 'การยืนยันการชำระเงินผิดพลาด',
+          message: 'กรุณาใส่รหัสผ่านให้ถูกต้อง',
+          position: 'top-left'
+        });
+        }
+      else{
       let infouser = JSON.parse(window.localStorage.getItem('user'));
         let ticket = {
           showTimeId: this.paymentinfo.showTimeId,
@@ -180,6 +215,7 @@ export default {
           position: 'top-left'
         });
         this.$router.push({path: '/'});
+      }
       },
   }
 };
