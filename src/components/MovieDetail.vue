@@ -29,7 +29,7 @@
             <div v-for="theater in cineplex.cineplexDetail" :key="theater.theaterId">
               <div v-if='theater.screeningId == movieId && showTimestate'>
                 <el-col :span="24">
-                  <el-tabs type="card" @tab-click="handleClick">
+                  <el-tabs type="card" @tab-click="handleClick" v-model="activeName">
                     <el-tab-pane v-for="showtime in theater.showTimeList" :key="showtime.showDateId" :label="showtime.showDate" :name="showtime.showDateId">
                       <div>
                         <h1> {{cineplex.cineplexName}}</h1>
@@ -62,6 +62,7 @@ export default {
   data(){
     if(this.$route.name == "NowShowingDetail"){
       return{
+        activeName: "27022019",
         movieId: this.$route.params.id,
         movieList: moviejson.nowShowingList,
         theaterList: theaterjson.cineplexList,

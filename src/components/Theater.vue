@@ -10,7 +10,7 @@
       <div v-for="cinema in cinemaInfo" :key="cinema.cineplexId">
         <div v-if="cinemaId==cinema.cineplexId">
           <el-col class="picker-item" :span="24">
-            <el-tabs type="card" @tab-click="handleClick" >
+            <el-tabs type="card" @tab-click="handleClick" v-model="activeName">
               <el-tab-pane v-for="item in cinema.cineplexDetail[0].showTimeList" :key="item.showDateId" :label="item.showDate" :name="item.showDateId">
                 <ShowMoviebyDate v-bind:dateId="item.showDateId" v-bind:cineplexId="cinemaId"></ShowMoviebyDate>
               </el-tab-pane>
@@ -38,6 +38,7 @@ export default {
   },
   data (){
     return{
+      activeName: "27022019",
       cinemaId: this.$route.params.id,
       cinemaInfo: theaterInfo.cineplexList,
     }

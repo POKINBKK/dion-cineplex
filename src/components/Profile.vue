@@ -30,6 +30,7 @@
                 v-bind:kid_seat="item.kid_seat"
                 v-bind:old_seat="item.old_seat"
                 v-bind:timestamp="item.timestamp"
+                @removeTicket="removeTicket"
                 >
                 </Ticket>
               </div>
@@ -53,6 +54,7 @@ export default {
   },
   data() {
     return {
+      dialogVisible: false,
       userinfo: JSON.parse(window.localStorage.getItem('user')),
       activeName: "first"
     };
@@ -81,6 +83,41 @@ export default {
     logoutClick(){
       window.localStorage.setItem('loginstate', false);
       this.$router.push({path: '/'});
+    },
+    removeTicket(value){
+      this.$notify({
+          title: 'ขอคืนเงินสำเร็จ',
+          message: 'ท่านสามารถตรวจสอบการขอคืนเงินได้ที่Emailของท่าน',
+          type: 'success',
+          position: 'top-left'
+        });
+      let all_unavailable = JSON.parse(window.localStorage.getItem('unavailable'));
+      let tickets = this.userinfo.ticket;
+      for(let i = 0;i<tickets.length;i++){
+        if(tickets[i].timestamp == value){
+          for(let j = 0;j<all_unavailable.length;j++){
+            if(all_unavailable[j].showTimeId == tickets[i].showTimeId){
+                for(let k = 0;k<tickets[i].adult_seat.length;k++){
+                  let index = all_unavailable[j].seats.indexOf(tickets[i].adult_seat[k]);
+                  all_unavailable[j].seats.splice(index, 1);
+                }
+                for(let k = 0;k<tickets[i].kid_seat.length;k++){
+                  let index = all_unavailable[j].seats.indexOf(tickets[i].kid_seat[k]);
+                  all_unavailable[j].seats.splice(index, 1);
+                }
+                for(let k = 0;k<tickets[i].old_seat.length;k++){
+                  let index = all_unavailable[j].seats.indexOf(tickets[i].old_seat[k]);
+                  all_unavailable[j].seats.splice(index, 1);
+                }
+            }
+          }
+          let index = this.userinfo.ticket.indexOf(tickets[i]);
+          this.userinfo.ticket.splice(index, 1);
+        }
+      }
+
+      window.localStorage.setItem('user',JSON.stringify(this.userinfo));
+      window.localStorage.setItem('unavailable',JSON.stringify(all_unavailable));
     }
   }
 };

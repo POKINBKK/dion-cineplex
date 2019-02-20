@@ -24,7 +24,7 @@
           </el-col>
           <el-col :span="3" style="float:right">
             <div style="padding-top: 7em;">
-            <el-button v-if="this.$route.name=='Profile'" type="danger" @click="removeItem">Refund</el-button>
+            <el-button v-if="this.$route.name=='Profile'" type="danger" @click="$emit('removeTicket', timestamp)">Refund</el-button>
             </div>
           </el-col>
       </el-row>
@@ -184,35 +184,6 @@ export default {
       } else {
         return result;
       }
-    }
-  },
-  methods: {
-    removeItem(){
-      let userinfo = JSON.parse(window.localStorage.getItem('user'));
-      let all_unavailable = JSON.parse(window.localStorage.getItem('unavailable'));
-      let tickets = userinfo.ticket;
-      for(let i = 0;i<tickets.length;i++){
-        if(tickets[i].showTimeId === this.showTimeId && tickets[i].adult_seat.toString() === this.adult_seat.toString() && tickets[i].kid_seat.toString() === this.kid_seat.toString() && tickets[i].old_seat.toString() === this.old_seat.toString() && tickets[i].timestamp === this.timestamp){
-          for(let j = 0;j<all_unavailable.length;j++){
-            if(this.showTimeId == all_unavailable[j].showTimeId){
-              console.log(all_unavailable[j]);
-              for(let k = 0;k<this.adult_seat.length;k++){
-                let index = all_unavailable[j].seats.indexOf(this.adult_seat[k]);
-                console.log(index);
-                all_unavailable[j].seats.splice(index, 1);
-              }
-            }
-          }
-          console.log(all_unavailable);
-          //delete from user ticket list
-          tickets.splice(i, 1);
-          break;
-        }
-      }
-      userinfo.ticket = tickets;
-      //console.log(all_unavailable);
-      window.localStorage.setItem('user',JSON.stringify(userinfo));
-      window.localStorage.setItem('unavailable',JSON.stringify(all_unavailable));
     }
   }
 }
