@@ -21,8 +21,7 @@
             </ul>
           </div>
         </div>
-      </div>
-      <el-dialog
+              <el-dialog
       title="ตัวอย่างภาพยนตร์"
       :visible.sync="centerDialogVisible"
       width="51%"
@@ -34,6 +33,7 @@
       <el-button type="primary" @click="centerDialogVisible = false">ปิดหน้าต่าง</el-button>
       </span>
       </el-dialog>
+      </div>
       <br>
       <div class="showtime-container">
         <el-row>
@@ -87,7 +87,8 @@ export default {
         movieId: this.$route.params.id,
         movieList: moviejson.comingSoonList,
         theaterList: theaterjson.cineplexList,
-        showTimestate: false
+        showTimestate: false,
+        centerDialogVisible: false,
       }
     }
   }
