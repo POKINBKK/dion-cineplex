@@ -176,7 +176,8 @@ export default {
         this.$notify({
           title: 'ยืนยันการสั่งซื้อ',
           message: 'ตรวจสอบการสั่งซื้อได้ที่Email: '+ this.userinfo.email + ' ของท่าน',
-          type: 'success'
+          type: 'success',
+          position: 'top-left'
         });
         this.$router.push({path: '/'});
       },

@@ -23,7 +23,7 @@
             </el-tab-pane>
             <el-tab-pane label="ประวัติการซื้อ" name="second">
               <div class="heading">ประวัติการซื้อ</div>
-              <div v-for="item in ticket" :key="item.showTimeId" class="head">
+              <div v-for="item in ticket" :key="item.timestamp" class="head">
                 <Ticket 
                 v-bind:showTimeId="item.showTimeId"
                 v-bind:adult_seat="item.adult_seat"

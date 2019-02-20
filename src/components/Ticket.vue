@@ -189,24 +189,30 @@ export default {
   methods: {
     removeItem(){
       let userinfo = JSON.parse(window.localStorage.getItem('user'));
+      let all_unavailable = JSON.parse(window.localStorage.getItem('unavailable'));
       let tickets = userinfo.ticket;
-      console.log(tickets);
       for(let i = 0;i<tickets.length;i++){
-        console.log("-------")
-        console.log(tickets[i].showTimeId === this.showTimeId);
-        console.log(tickets[i].adult_seat.toString() == this.adult_seat.toString());
-        console.log(tickets[i].kid_seat.toString() == this.kid_seat.toString());
-        console.log(tickets[i].old_seat.toString() == this.old_seat.toString());
-        console.log(tickets[i].timestamp === this.timestamp);
         if(tickets[i].showTimeId === this.showTimeId && tickets[i].adult_seat.toString() === this.adult_seat.toString() && tickets[i].kid_seat.toString() === this.kid_seat.toString() && tickets[i].old_seat.toString() === this.old_seat.toString() && tickets[i].timestamp === this.timestamp){
-          console.log(i);
+          for(let j = 0;j<all_unavailable.length;j++){
+            if(this.showTimeId == all_unavailable[j].showTimeId){
+              console.log(all_unavailable[j]);
+              for(let k = 0;k<this.adult_seat.length;k++){
+                let index = all_unavailable[j].seats.indexOf(this.adult_seat[k]);
+                console.log(index);
+                all_unavailable[j].seats.splice(index, 1);
+              }
+            }
+          }
+          console.log(all_unavailable);
+          //delete from user ticket list
           tickets.splice(i, 1);
           break;
         }
       }
       userinfo.ticket = tickets;
-
+      //console.log(all_unavailable);
       window.localStorage.setItem('user',JSON.stringify(userinfo));
+      window.localStorage.setItem('unavailable',JSON.stringify(all_unavailable));
     }
   }
 }

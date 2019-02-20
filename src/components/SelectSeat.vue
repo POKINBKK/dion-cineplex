@@ -155,7 +155,6 @@ export default {
         row: ["J", "I", "H", "G", "F", "E", "D", "C", "B", "A"],
         col: ["1", "2", "3", "4", "5", "6", "7", "8"]
       },
-      bought_list: [],
       buy_list_adult: [],
       buy_list_kid: [],
       buy_list_old: [],
@@ -336,8 +335,19 @@ export default {
         result = result + " " + this.buy_list_old[i];
       }
       return result;
+    },
+    bought_list(){
+      let all_unavailable = JSON.parse(window.localStorage.getItem('unavailable'));
+      let result = [];
+      for(let i = 0;i<all_unavailable.length;i++){
+        if(all_unavailable[i].showTimeId==this.showTimeId){
+          result = all_unavailable[i].seats;
+        }
+      }
+      return result;
     }
   }
+
 };
 </script>
 

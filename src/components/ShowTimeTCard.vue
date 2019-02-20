@@ -25,7 +25,8 @@ export default {
           this.$notify({
           title: 'กรุณาเข้าสู่ระบบ',
           message: 'ท่านจำเป็นต้องเข้าสู่ระบบจึงจะเลือกที่นั่งได้',
-          type: 'warning'
+          type: 'warning',
+          position: 'top-left'
         });
       }
     }
