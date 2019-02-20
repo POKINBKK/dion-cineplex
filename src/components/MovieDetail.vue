@@ -17,11 +17,23 @@
             <ul class="movie-detail-list">
               <li class="list-item" style="padding-left:0;">ความยาว: {{movieList[movieId-1].movieLength}} นาที</li>
               <br>
-              <el-button style="margin-top:30px;">รายละเอียดภาพยนตร์</el-button>
+              <el-button @click="centerDialogVisible = true" style="margin-top:30px;">ตัวอย่างภาพยนตร์</el-button>
             </ul>
           </div>
         </div>
       </div>
+      <el-dialog
+      title="ตัวอย่างภาพยนตร์"
+      :visible.sync="centerDialogVisible"
+      width="51%"
+      center>
+      <span><iframe width="720" height="480"
+      v-bind:src="movieList[movieId-1].movieTrailer">
+      </iframe></span>
+      <span slot="footer" class="dialog-footer">
+      <el-button type="primary" @click="centerDialogVisible = false">ปิดหน้าต่าง</el-button>
+      </span>
+      </el-dialog>
       <br>
       <div class="showtime-container">
         <el-row>
@@ -66,7 +78,8 @@ export default {
         movieId: this.$route.params.id,
         movieList: moviejson.nowShowingList,
         theaterList: theaterjson.cineplexList,
-        showTimestate: true
+        showTimestate: true,
+        centerDialogVisible: false,
       }
     }
     if(this.$route.name == "ComingSoonDetail"){
