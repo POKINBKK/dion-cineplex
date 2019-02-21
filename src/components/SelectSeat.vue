@@ -401,6 +401,8 @@ export default {
 .screen-wrapper {
   position: relative;
   height: 50px;
+  border-top: 5px solid;
+  border-color: #2d64cf;
 }
 .screen-text {
   font-size: 20px;
