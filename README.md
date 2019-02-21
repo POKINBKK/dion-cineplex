@@ -1,6 +1,6 @@
-# my-project
+# Dion Cineplex
 
-> A Vue.js project
+> Vue.js Assignment for Web Programming @IT KMITL
 
 ## Build Setup
 
