@@ -127,7 +127,7 @@
                 </div>
                 <el-row style="margin:10px;">
                   <el-button type="primary" disabled v-if="this.buy_list_adult.length==0&&this.buy_list_kid.length==0&&this.buy_list_old.length==0" round>ดำเนินการต่อ</el-button>
-                  <el-button type="primary" v-else round v-on:click="confirm()">ดำเนินการต่อ</el-button>
+                  <el-button type="primary" icon="el-icon-success" v-else round v-on:click="confirm()">ดำเนินการต่อ</el-button>
                 </el-row>
               </div>
             </div>

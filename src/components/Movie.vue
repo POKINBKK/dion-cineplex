@@ -13,7 +13,7 @@
         </el-select>
       </el-col>
       <el-col :span="12">
-          <el-input style="float:right; width:40%" placeholder="Search" v-model="input"></el-input>
+          <el-input prefix-icon="el-icon-search" style="float:right; width:40%" placeholder="Search" v-model="input"></el-input>
       </el-col>
     </el-row>
     <el-row class="movie-row" justify="space-around" :gutter="20">

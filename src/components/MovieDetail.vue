@@ -17,7 +17,7 @@
             <ul class="movie-detail-list">
               <li class="list-item" style="padding-left:0;">ความยาว: {{movieList[movieId-1].movieLength}} นาที</li>
               <br>
-              <el-button @click="centerDialogVisible = true" style="margin-top:30px;">ตัวอย่างภาพยนตร์</el-button>
+              <el-button icon="el-icon-caret-right" @click="centerDialogVisible = true" style="margin-top:30px;">ตัวอย่างภาพยนตร์</el-button>
             </ul>
           </div>
         </div>
@@ -26,11 +26,11 @@
       :visible.sync="centerDialogVisible"
       width="51%"
       center>
-      <span><iframe width="720" height="480"
+      <span><iframe width="720" height="480" frameborder="0"
       v-bind:src="movieList[movieId-1].movieTrailer">
       </iframe></span>
       <span slot="footer" class="dialog-footer">
-      <el-button type="primary" @click="centerDialogVisible = false">ปิดหน้าต่าง</el-button>
+      <el-button icon="el-icon-circle-close" type="primary" @click="centerDialogVisible = false">ปิดหน้าต่าง</el-button>
       </span>
       </el-dialog>
       </div>
