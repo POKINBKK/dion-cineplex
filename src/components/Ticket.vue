@@ -5,7 +5,7 @@
         <el-col :span="6">
           <img v-bind:src="movieThumbnails" class="poster" width="100%">
         </el-col>
-          <el-col :span="15">
+          <el-col :span="14">
             <el-row class="info">
               <el-col class="bought">เรื่อง : {{movieName}}</el-col>
               <el-col class="bought">โรงภาพยนตร์ที่ {{theaterId}}</el-col>
@@ -22,9 +22,9 @@
               <!-- <el-col v-if="this.$route.name=='Profile'" class="bought">เวลาที่สั่งซื้อ : {{timestamp}}</el-col> -->
             </el-row>
           </el-col>
-          <el-col :span="3" style="float:right">
-            <div style="padding-top: 7em;">
-            <el-button v-if="this.$route.name=='Profile'" type="danger" @click="$emit('removeTicket', timestamp)">Refund</el-button>
+          <el-col :span="4" style="float:right">
+            <div style="padding-top: 6em;margin-right:1em;">
+            <el-button icon="el-icon-circle-close" v-if="this.$route.name=='Profile'" type="danger" @click="$emit('removeTicket', timestamp)">ขอคืนเงิน</el-button>
             </div>
           </el-col>
       </el-row>
