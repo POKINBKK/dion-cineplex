@@ -16,7 +16,7 @@
                   <el-col class="bought">E-mail : {{mail}}</el-col>
                 </el-row>
                 <div style="text-align:center;">
-                  <el-button type="danger" icon="el-icon-error" @click="logoutClick">ออกจากระบบ</el-button>
+                  <el-button icon="el-icon-circle-close" type="danger" @click="logoutClick">ออกจากระบบ</el-button>
                 </div>
               </div>
             </el-tab-pane>

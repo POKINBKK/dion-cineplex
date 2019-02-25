@@ -59,7 +59,7 @@
                 <el-input class="input-form" placeholder="หมายเลขสมาชิก" v-model="member_section.member_id"></el-input>
                 <el-input type="password" class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
                 <div style="text-align: center;padding-top: 1.5em;">
-                  <el-button type="primary" icon="el-icon-success" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
+                  <el-button type="primary" icon="el-icon-circle-check" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
                 </div>
                 </div>
               </div>
@@ -68,7 +68,7 @@
                   <el-input type="password" class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
                   </div>
                 <div style="text-align: center;padding-top: 1.5em;">
-                  <el-button type="primary" icon="el-icon-success" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
+                  <el-button icon="el-icon-circle-check" type="primary" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
                 </div>
                 </div>
               <div v-if="credit">
@@ -82,7 +82,7 @@
                 </div>
                 <el-input type="password" class="input-form" placeholder="รหัสผ่าน" v-model="password"></el-input>
                 <div style="text-align: center;padding-top: 1.5em;">
-                  <el-button type="primary" icon="el-icon-success" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
+                  <el-button icon="el-icon-circle-check" type="primary" @click="confirmForm">ยืนยันการสั่งซื้อ</el-button>
                 </div>
                 </div>
               </div>
